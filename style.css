@@ -296,7 +296,7 @@ h4{
         text-align: center;
     }
     img{
-        width:80%;
+        width: 100%;
     }
     .main-content {
         padding: 10px;
@@ -306,7 +306,7 @@ h4{
         transform: translateX(-20px);
     }
     #img5{
-        width:110%;
+        width:130%;
         transform: translateX(-20px); 
     }
     #PWintroduce{

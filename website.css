@@ -1,0 +1,333 @@
+/* Apply the gradient to the entire page */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #a831a8, #12127d, #820b8d, #2b2b30);
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: gradientAnimation 5s ease infinite;
+    color: #fff;
+}
+  
+  /* Animation to make the gradient dynamic */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.67vw;
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+    letter-spacing: 0.104vw; /* Adjust for spacing between letters */
+    text-shadow: 0.104vw 0.104vw 0.208vw rgba(0, 0, 0, 0.5); /* Soft shadow */
+    margin: 18.5vh 0 1.85vh 0; /* Adjust vertical positioning here */
+    margin-left: 20vw;
+    padding: 20px 0;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+    letter-spacing: 0.104vw; /* Adjust for spacing between letters */
+    text-shadow: 0.104vw 0.104vw 0.208vw rgba(0, 0, 0, 0.5); /* Soft shadow */
+    margin-left: 20vw;
+    margin-bottom: 0.93vh;
+    padding: 20px 0;
+
+}
+
+
+.fa-github, .fa-facebook, .fa-instagram {
+    color: white;
+}
+
+.icon_container {
+    display: flex;
+    justify-content: left; /* Center the icons horizontally */
+    gap: 1.04vw; /* Space between icons */
+    margin-top: 0.93vh; /* Add space between the title and icons */
+    margin-left: 20vw;
+}
+/* Optional: Add hover effects for the icons */
+.icon_container a i:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+    transition: transform 0.3s ease;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+  
+.sidebar {
+    position: fixed;
+    height:100vh;
+    width: 10.42vw;
+    background-color: #08027fa7;
+    padding: 1.04vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the categories */
+    align-items: center; /* Horizontally center the categories */
+    box-shadow: 0.104vw 0.104vw 0.521vw rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 1.85vh;
+}
+
+.sidebar ul li a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.92vw;
+    display: block;
+    padding: 0.52vw;
+    border-radius: 4px;
+}
+
+.sidebar ul li a:hover {
+    color: rgb(212, 208, 208);
+    transform: scale(1.1); /* Slight zoom on hover */
+    transition: transform 0.3s ease;
+}
+
+#AboutMe{
+    height:1000vh;
+    margin-top: 60vh;
+    margin-left: 12.5vw;
+    padding: 5vh;
+    margin-right: 0px;
+    background-color: #120a73; /* Light background for the section */
+}
+.wrapper{
+    margin: 40px auto ;
+    width: 90%;
+}
+#img1, #img3, #img5{
+    float:left;
+}
+#img2, #img4{
+    float:right;
+}
+#img1, #img2, #img3, #img5{
+    max-width: 500px;
+    margin-right: 50px;
+    object-fit: cover;
+
+}
+#img2{
+    margin-top: 5vh;
+}
+#img4{
+    margin-top: 10vh;
+    max-width: 330px;
+    margin-right: 50px;
+    object-fit: cover;
+    float: right;
+
+}
+#img5{
+    margin-top:130px;
+    float:left;
+    max-width: 500px;
+    object-fit: cover;
+}
+
+.textbox h5{
+    font-family:'Montserrat', sans-serif ;
+    font-size: 32px;
+}
+.textbox p{
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+#title2 {
+    margin-top: 8vh;
+    font-family:'Montserrat', sans-serif ;
+    font-size: 20px;
+}
+#title3 {
+    margin-top: 10vh;
+    font-family:'Montserrat', sans-serif ;
+    font-size: 32px;
+}
+#title4 {
+    margin-top: 14vh;
+    font-family:'Montserrat', sans-serif ;
+    font-size: 32px;
+}
+#Flappybird {
+    margin-top: 5vh;
+    font-family:'Montserrat', sans-serif ;
+    font-size: 20px;
+}
+#PersonalWebsite{
+    transform: translateY(-30px);
+    margin-top: 3vh;
+    font-family:'Montserrat', sans-serif ;
+    font-size: 20px;
+}
+.textbox{
+    padding: 20px;
+    margin-right: 50px;
+}
+
+#textbox4{
+    width:500px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+#textbox5{
+    margin-top: 100px;
+}
+#textbox3{
+    margin-right: 50px;
+
+}
+#textbox2{
+    width:400px;
+    padding-bottom: 60px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+#FBbutton{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #1b15c4; /* GitHub's dark color */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+#FBbutton:hover {
+    background-color: #51acbeef; /* Lighter on hover */
+}
+.language_container {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.language {
+    margin: 15px 0;
+}
+
+.language_label {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 30px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 30px;
+    transition: width 0.5s ease;
+}
+
+.python { 
+    background-color: #20b398; 
+} 
+.cpp { 
+    background-color: #20b398; 
+} 
+.html-css-js { 
+    background-color: #20b398; 
+} 
+#MyContact{
+    background-color: #280247;
+    margin-left: 12.5vw;
+}
+#MyContactTitle{
+    margin-left: 5vw;
+    margin-bottom: 0px;
+    padding: 10px 0;
+    font-size: 2rem;
+    padding-top:20px;
+
+}
+#MyEmail{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 5vw;
+    font-size: 1.2rem;
+    color:rgb(212, 208, 208);
+    font-style: italic;
+    text-decoration: dotted;
+    padding-bottom: 50px; 
+}
+.bullet-list {
+    list-style-type: disc;
+}
+
+/* For smaller screens, the sidebar can collapse */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    h3{
+        font-size: 110%;
+    }
+    .sidebar {
+        width: 10.5%;
+        text-align: center;
+    }
+    img{
+        width:80%;
+    }
+    .main-content {
+        padding: 10px;
+    }
+
+    #img4{
+        transform: translateX(-20px);
+    }
+    #img5{
+        width:110%;
+        transform: translateX(-20px); /* Shift it slightly to the right */
+    }
+    #PWintroduce{
+        transform: translateX(-20px);
+        width: 280px;
+    }
+    #textbox2, #textbox4, #textbox3{
+        width:auto;
+    }
+    
+
+    
+    }
